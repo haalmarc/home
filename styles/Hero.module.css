@@ -52,6 +52,7 @@
   text-decoration: none;
   font-weight: bold;
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -60,12 +61,16 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .heroContainer {
-    justify-content: space-around;
+@media only screen and (max-width: 768px) {
+  .heroContainer h2 {
+    font-size: 4rem;
   }
 
-  .heroContainer img {
-    display: none;
+  .heroContainer p {
+    font-size: 1.5rem;
+  }
+
+  .heroContainer .btn {
+    font-size: 1.5rem;
   }
 }

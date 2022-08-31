@@ -9,10 +9,6 @@ export default function Navbar() {
           <a>Hjem</a>
         </Link>
         <div className={styles.links}>
-          <Link href="/#about">
-            <a>Om meg</a>
-          </Link>
-
           <Link href="/posts">
             <a>Blogg</a>
           </Link>
