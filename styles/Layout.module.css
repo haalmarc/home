@@ -1,0 +1,59 @@
+.container {
+  padding: 0.5em 6em;
+}
+
+.container nav {
+  width: 100%;
+}
+
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  height: 5vh;
+}
+
+.container nav a {
+  text-decoration: none;
+}
+
+.container footer {
+  padding-bottom: 10rem;
+}
+
+.container footer h1 {
+  font-size: 2rem;
+}
+
+.container footer p {
+  font-size: 1.5rem;
+}
+
+.container footer .social {
+  display: flex;
+  margin-top: 6rem;
+}
+
+.container footer .social svg {
+  margin-right: 3rem;
+}
+
+nav .btnSecondary {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--main-text-color);
+  width: fit-content;
+  border-radius: 0.25rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.links a {
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0.5em 2em;
+  }
+}

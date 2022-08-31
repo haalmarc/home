@@ -1,0 +1,61 @@
+.postsPage {
+  margin: 2em auto;
+  padding: 0 6em;
+  max-width: 1024px;
+}
+
+.postContainer {
+  display: flex;
+  padding: 1em;
+  margin-bottom: 3em;
+  background-color: #2f275b;
+}
+
+/* Workaround for first of given class name */
+:not(.postContainer) + .postContainer {
+  flex-direction: column;
+}
+
+:not(.postContainer) + .postContainer img {
+  width: 100%;
+}
+
+:not(.postContainer) + .postContainer h2 {
+  margin-top: 1em;
+}
+
+.postContainer h2 {
+  margin-top: 0;
+}
+
+.postContainer img {
+  border-radius: 1em;
+  width: 40%;
+  margin-right: 1em;
+}
+
+.postText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .postsPage {
+    padding: 0 0em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .postContainer {
+    flex-direction: column;
+  }
+
+  .postContainer img {
+    width: 100%;
+  }
+
+  .postContainer h2 {
+    margin-top: 1em;
+  }
+}
