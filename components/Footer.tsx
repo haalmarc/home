@@ -5,9 +5,11 @@ import { FaLinkedin, FaGithub, FaMedium } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer>
-      <SectionTitle title="" id="contact" />
+      <SectionTitle
+        title="Lurer du på noe eller bare ønsker å si hei?"
+        id="contact"
+      />
 
-      <h1>Lurer du på noe eller bare ønsker å si hei?</h1>
       <p>
         Send en melding på{" "}
         <a
