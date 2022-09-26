@@ -8,6 +8,8 @@
 .heroContainer img {
   display: block;
   margin-left: 1em;
+  object-fit: contain;
+  aspect-ratio: 1/1;
 }
 
 .about {
@@ -63,18 +65,19 @@
   }
 
   .heroContainer img {
-    width: auto;
     margin-left: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .heroContainer h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .heroContainer p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .heroContainer .btn {
