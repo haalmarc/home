@@ -17,15 +17,13 @@ export default function About() {
 
         <AboutSection
           emoji={<FaHammer />}
-          text="For tiden jobber jeg som konsulent i Bekk, på oppdrag i Enova. Der jobber jeg med å gjøre det lettere å søke og å
-          behandle saker om støtte for klimavennlige tiltak. Dette løser jeg med .NET, Razor og Vue."
+          text="For tiden jobber jeg som konsulent i Bekk, på oppdrag i Enova. Der jobber jeg med å gjøre det lettere å velge klimavennlig. Dette løser jeg med .NET, Razor og Vue."
         />
 
         <AboutSection
           emoji={<FaSchool />}
           text="Jeg har en bachelor i informatikk og en bachelor i psykologi fra NTNU. 
-          På informatikk lærte jeg å programmere løsninger for og med folk. 
-          Psykologibakgrunnen bidrar godt inn i samarbeid og forståelse av hvilket behov løsningen skal dekke. 
+          Dette er et godt utgangspunkt til å lage løsninger for og med folk. 
         "
         />
       </div>
