@@ -11,10 +11,6 @@
   font-size: 2rem;
 }
 
-.aboutSection p {
-  text-align: center;
-}
-
 .aboutSections {
   display: flex;
 }
