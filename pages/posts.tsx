@@ -18,7 +18,7 @@ export const getStaticProps = async () => {
   const request = await fetch(url);
   const data = await request.json();
   const posts = data.items as Post[];
-  return { props: { posts } };
+  return { props: { posts }, revalidate: 10 };
 };
 
 interface Props {
