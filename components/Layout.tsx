@@ -9,6 +9,7 @@ export default function Layout({ children }) {
       <Head>
         <title>Marcus Haaland</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="shortcut icon" href="/faviconHM.png" />
       </Head>
       <Navbar />
       <main>{children}</main>
