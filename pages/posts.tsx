@@ -13,8 +13,10 @@ interface Post {
 }
 
 export const getStaticProps = async () => {
-  const url =
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@marcushaaland";
+  const timestampToAvoidrss2jsonOneHourCache = new Date()
+    .getMilliseconds()
+    .toString();
+  const url = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@marcushaaland?t=${timestampToAvoidrss2jsonOneHourCache}`;
   const request = await fetch(url);
   const data = await request.json();
   const posts = data.items as Post[];
