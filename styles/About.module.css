@@ -1,14 +1,17 @@
 .aboutSection {
   display: flex;
-  padding: 1.5rem;
+  padding: 2rem;
   flex-direction: column;
   align-items: center;
   background-color: #2f275b;
   flex-basis: 100%;
+  border-radius: 1em;
+  margin-bottom: 2em;
 }
 
 .aboutSection span {
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-bottom: 1em;
 }
 
 .aboutSections {

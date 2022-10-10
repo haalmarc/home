@@ -17,7 +17,7 @@ export default function About() {
 
         <AboutSection
           emoji={<FaHammer />}
-          text="For tiden jobber jeg som konsulent i Bekk, på oppdrag i Enova. Der jobber jeg med å gjøre det lettere å velge klimavennlig. Dette løser jeg med .NET, Razor og Vue."
+          text="For tiden jobber jeg som konsulent i Bekk, på oppdrag i Enova. Der jobber jeg med å gjøre det lettere å velge klimavennlig."
         />
 
         <AboutSection
