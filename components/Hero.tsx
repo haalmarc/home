@@ -9,7 +9,7 @@ export default function Hero() {
           <h2>Marcus Haaland</h2>
           <p>
             Jeg er en systemutvikler, med bakgrunn i psykologi. For tiden jobber
-            jeg med å gjøre det lettere å velge klimavennlig.
+            jeg med å gjøre det lettere å velge klimavennlig
           </p>
           <a className={styles.btn} href="#about">
             Bli kjent
