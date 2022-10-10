@@ -12,13 +12,13 @@ interface Post {
   categories: string[];
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const url =
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@marcushaaland";
   const request = await fetch(url);
   const data = await request.json();
   const posts = data.items as Post[];
-  return { props: { posts }, revalidate: 10 };
+  return { props: { posts } };
 };
 
 interface Props {
