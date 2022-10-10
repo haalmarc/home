@@ -23,7 +23,7 @@
   margin-left: 1em;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   .aboutSections {
     flex-direction: column;
   }
@@ -31,5 +31,9 @@
   .aboutSection:nth-child(2) {
     margin-right: 0;
     margin-left: 0;
+  }
+
+  .aboutSection span {
+    margin-bottom: 0;
   }
 }
