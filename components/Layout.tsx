@@ -2,8 +2,13 @@ import Navbar from "./Navbar";
 import styles from "../styles/Layout.module.css";
 import Footer from "./Footer";
 import Head from "next/head";
+import RevealWrapper from "./RevealWrapper";
 
-export default function Layout({ children }) {
+interface IProps {
+  children: React.ReactNode;
+}
+
+export default function Layout({ children }: IProps) {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,7 +18,9 @@ export default function Layout({ children }) {
       </Head>
       <Navbar />
       <main>{children}</main>
-      <Footer />
+      <RevealWrapper>
+        <Footer />
+      </RevealWrapper>
     </div>
   );
 }

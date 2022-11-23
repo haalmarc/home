@@ -46,3 +46,16 @@ main {
 a {
   color: var(--main-text-color);
 }
+
+/* Reveal content on scroll */
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
