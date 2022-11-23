@@ -1,11 +1,11 @@
 import styles from "../styles/About.module.css";
 
-interface Props {
+interface IProps {
   emoji: JSX.Element;
   text: string;
 }
 
-export default function AboutSection({ emoji, text }: Props) {
+export default function AboutSection({ emoji, text }: IProps) {
   return (
     <div className={styles.aboutSection}>
       <span>{emoji}</span>

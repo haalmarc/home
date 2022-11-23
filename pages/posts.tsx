@@ -20,11 +20,11 @@ export const getStaticProps = async () => {
   return { props: { posts }, revalidate: 10 }; // Revalidate each 10 second
 };
 
-interface Props {
+interface IProps {
   posts: Post[];
 }
 
-export default function Posts({ posts }: Props) {
+export default function Posts({ posts }: IProps) {
   return (
     <div className={styles.postsPage}>
       <SectionTitle title="Blogg" id="" />
