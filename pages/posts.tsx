@@ -1,3 +1,4 @@
+import RevealWrapper from "../components/RevealWrapper";
 import SectionTitle from "../components/SectionTitle";
 import styles from "../styles/Posts.module.css";
 
@@ -29,18 +30,20 @@ export default function Posts({ posts }: IProps) {
     <div className={styles.postsPage}>
       <SectionTitle title="Blogg" id="" />
 
-      {posts.map((p: Post) => (
-        <div key={p.link} className={styles.postContainer}>
-          <img src={p.thumbnail} />
-          <div className={styles.postText}>
-            <div>
-              <h2>{p.title}</h2>
-              <p>{removeTags(p.description).slice(0, 200)}...</p>
+      <ul>
+        {posts.map((p: Post) => (
+          <li key={p.link}>
+            <img src={p.thumbnail} />
+            <div className={styles.postText}>
+              <div>
+                <h2>{p.title}</h2>
+                <p>{removeTags(p.description).slice(0, 200)}...</p>
+              </div>
+              <a href={p.link}>Les mer</a>
             </div>
-            <a href={p.link}>Les mer</a>
-          </div>
-        </div>
-      ))}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
