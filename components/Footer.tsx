@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaMedium } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="reveal">
       <SectionTitle
         title="Lurer du på noe eller bare ønsker å si hei?"
         id="contact"

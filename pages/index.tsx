@@ -1,14 +1,13 @@
 import About from "../components/About";
 import Hero from "../components/Hero";
-import RevealWrapper from "../components/RevealWrapper";
+import useAddRevealListener from "../utils/useAddRevealListener";
 
 export default function Home() {
+  useAddRevealListener();
   return (
     <>
       <Hero />
-      <RevealWrapper>
-        <About />
-      </RevealWrapper>
+      <About />
     </>
   );
 }

@@ -1,6 +1,6 @@
-import RevealWrapper from "../components/RevealWrapper";
 import SectionTitle from "../components/SectionTitle";
 import styles from "../styles/Posts.module.css";
+import useAddRevealListener from "../utils/useAddRevealListener";
 
 interface Post {
   title: string;
@@ -26,13 +26,15 @@ interface IProps {
 }
 
 export default function Posts({ posts }: IProps) {
+  useAddRevealListener();
+
   return (
     <div className={styles.postsPage}>
       <SectionTitle title="Blogg" id="" />
 
       <ul>
         {posts.map((p: Post) => (
-          <li key={p.link}>
+          <li key={p.link} className="reveal">
             <img src={p.thumbnail} />
             <div className={styles.postText}>
               <div>
