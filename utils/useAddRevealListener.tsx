@@ -14,13 +14,12 @@ function revealOrHideElement() {
   const revealElements = document.querySelectorAll(".reveal");
 
   revealElements.forEach((domElement) => {
-    const viewHeightPosition = window.innerHeight;
+    const viewHeight = window.innerHeight;
     const elementTopPosition = domElement.getBoundingClientRect().top;
     const pixelsOfElementInViewBeforeReveal = 100;
 
     const topOfElementIsWithinViewThreshold =
-      elementTopPosition <
-      viewHeightPosition - pixelsOfElementInViewBeforeReveal;
+      elementTopPosition < viewHeight - pixelsOfElementInViewBeforeReveal;
 
     if (topOfElementIsWithinViewThreshold) {
       domElement.classList.add("active");

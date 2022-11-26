@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle";
 
 export default function About() {
   return (
-    <div className={`${styles.aboutContainer} reveal`}>
+    <div className="reveal">
       <SectionTitle title="Om meg" id="about" />
 
       <div className={styles.aboutSections}>
