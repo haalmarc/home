@@ -1,17 +1,16 @@
 .aboutSection {
   display: flex;
-  padding: 2rem;
+  padding: 32px;
   flex-direction: column;
   align-items: center;
   background-color: #2f275b;
   flex-basis: 100%;
-  border-radius: 1em;
-  margin-bottom: 2em;
+  border-radius: 16px;
 }
 
 .aboutSection span {
   font-size: 3rem;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .aboutSections {
@@ -19,13 +18,17 @@
 }
 
 .aboutSection:nth-child(2) {
-  margin-right: 1em;
-  margin-left: 1em;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 @media only screen and (max-width: 768px) {
   .aboutSections {
     flex-direction: column;
+  }
+
+  .aboutSection {
+    margin-bottom: 32px;
   }
 
   .aboutSection:nth-child(2) {
