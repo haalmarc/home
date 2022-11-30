@@ -6,7 +6,6 @@
 
 .heroContainer img {
   display: block;
-  margin-left: 1em;
   object-fit: contain;
   aspect-ratio: 1/1;
 }
@@ -15,6 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 65%;
 }
 
 .heroContainer img {
@@ -22,25 +22,19 @@
   overflow: auto;
 }
 
-.about {
-  min-width: 65%;
-}
-
 .about p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   font-size: 1.5rem;
 }
 
 .about h1 {
   color: var(--secondary-color);
   font-size: 1rem;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .about h2 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   font-size: 5rem;
 }
 
@@ -64,10 +58,8 @@
     padding-bottom: 5em; /* Avoiding phone-buttons */
   }
 
-  .heroContainer img {
-    margin-left: 0;
-    margin-bottom: 1em;
-    margin-top: 1em;
+  .about {
+    margin-top: 16px;
   }
 }
 
