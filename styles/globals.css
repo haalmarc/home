@@ -50,7 +50,7 @@ a {
 .reveal {
   transform: translateY(100px);
   opacity: 0;
-  transition: 1s all ease;
+  transition: 1s opacity ease, 1s transform ease;
 }
 
 .reveal.active {
