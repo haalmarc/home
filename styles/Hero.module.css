@@ -4,10 +4,19 @@
   align-items: center;
 }
 
+.clipper {
+  padding: 20px;
+  height: 100%;
+  clip-path: circle(20% at 50% 50%);
+  background-color: #DFAD57;
+  display: flex;
+  align-items: center;
+}
+
 .heroContainer img {
-  display: block;
-  object-fit: contain;
-  aspect-ratio: 1/1;
+  position: sticky;
+  top: 40px;
+  width: 100%;
 }
 
 .about {
@@ -15,11 +24,6 @@
   flex-direction: column;
   justify-content: center;
   min-width: 65%;
-}
-
-.heroContainer img {
-  width: 100%;
-  overflow: auto;
 }
 
 .about p {
@@ -60,6 +64,20 @@
 
   .about {
     margin-top: 16px;
+  }
+
+  .clipper {
+    position: absolute;
+    top: 0;
+    align-items: baseline;
+    clip-path: circle(20% at 50% 20%);
+    margin-top: 40px;
+  }
+
+  .heroContainer img {
+    top: 0;
+    width: auto;
+    height: 40%;
   }
 }
 

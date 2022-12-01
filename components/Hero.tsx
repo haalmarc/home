@@ -15,7 +15,9 @@ export default function Hero() {
             Bli kjent
           </a>
         </div>
-        <img alt="me" src="./me.png" />
+        <div className={styles.clipper}>
+          <img alt="me" src="./me.png" />
+        </div>
       </div>
     </>
   );
