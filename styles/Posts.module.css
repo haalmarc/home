@@ -1,7 +1,7 @@
 .postsPage {
-  margin: 2em auto;
-  padding: 0 6em;
-  max-width: 1024px;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .postsPage ul {
@@ -12,16 +12,16 @@
 
 .postsPage ul li {
   display: flex;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
   background-color: #2f275b;
-  border-radius: 1em;
+  border-radius: 16px;
 }
 
 .postsPage ul li img {
-  border-radius: 1em;
+  border-radius: 16px;
   width: 40%;
   object-fit: cover;
-  border-radius: 1em 0 0 1em;
+  border-radius: 16px 0 0 16px;
 }
 
 .postsPage ul li h2 {
@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2em;
+  padding: 32px;
 }
 
 /* First post is highlighted  */
@@ -42,12 +42,12 @@
 
 .postsPage ul li:first-child img {
   width: 100%;
-  border-radius: 1em 1em 0 0;
+  border-radius: 16px 16px 0 0;
 }
 
 @media only screen and (max-width: 768px) {
   .postsPage {
-    padding: 0 0em;
+    padding: 0;
   }
 }
 
@@ -57,11 +57,11 @@
   }
 
   .postText {
-    padding: 1em 1em 2em 1em;
+    padding: 16px 16px 32px 16px;
   }
 
   .postsPage ul li img {
     width: 100%;
-    border-radius: 1em 1em 0 0;
+    border-radius: 16px 16px 0 0;
   }
 }
