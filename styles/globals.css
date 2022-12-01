@@ -48,7 +48,6 @@ a {
 
 /* Reveal content on scroll */
 .reveal {
-  position: relative;
   transform: translateY(100px);
   opacity: 0;
   transition: 1s all ease;
