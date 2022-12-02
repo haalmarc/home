@@ -5,7 +5,7 @@ import ClippedImage from "./ClippedImage";
 
 export default function Footer() {
   return (
-    <footer className="reveal">
+    <footer>
       <SectionTitle
         title="Lurer du på noe eller bare ønsker å si hei?"
         id="contact"
