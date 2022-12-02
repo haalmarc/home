@@ -23,7 +23,7 @@ export default function About() {
         <AboutSection
           emoji={<FaSchool />}
           text="Jeg har en bachelor i informatikk og en bachelor i psykologi fra NTNU. 
-          Dette er et godt utgangspunkt til å lage løsninger for og med folk. 
+          Jeg bruker dette til å lage løsninger for, og sammen med, folk. 
         "
         />
       </div>
