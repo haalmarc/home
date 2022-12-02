@@ -2,20 +2,6 @@
   display: flex;
   height: 95vh; /* Should be 100 - nav-height */
   align-items: center;
-}
-
-.clipper {
-  padding: 20px;
-  height: 100%;
-  clip-path: circle(20% at 50% 50%);
-  background-color: #DFAD57;
-  display: flex;
-  align-items: center;
-}
-
-.heroContainer img {
-  position: sticky;
-  top: 40px;
   width: 100%;
 }
 
@@ -24,11 +10,14 @@
   flex-direction: column;
   justify-content: center;
   min-width: 65%;
+  position: relative;
+  width: 100%;
 }
 
 .about p {
   margin: 0;
   font-size: 1.5rem;
+  max-width: 700px; /* To give space for absolute positioned image */
 }
 
 .about h1 {
@@ -64,20 +53,6 @@
 
   .about {
     margin-top: 16px;
-  }
-
-  .clipper {
-    position: absolute;
-    top: 0;
-    align-items: baseline;
-    clip-path: circle(20% at 50% 20%);
-    margin-top: 40px;
-  }
-
-  .heroContainer img {
-    top: 0;
-    width: auto;
-    height: 40%;
   }
 }
 

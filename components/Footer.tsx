@@ -1,6 +1,7 @@
 import styles from "../styles/Layout.module.css";
 import SectionTitle from "./SectionTitle";
 import { FaLinkedin, FaGithub, FaMedium } from "react-icons/fa";
+import ClippedImage from "./ClippedImage";
 
 export default function Footer() {
   return (
@@ -34,6 +35,7 @@ export default function Footer() {
           <FaMedium size={50} />
         </a>
       </div>
+      <ClippedImage bottom={true} />
     </footer>
   );
 }

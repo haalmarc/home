@@ -1,0 +1,50 @@
+/* Window effect for image */
+.clipper {
+  height: 400px;
+  background-color: #DFAD57;
+  position: absolute;
+  width: 200px;
+  right: 0;
+  top: 0;
+}
+
+.clipper.top {
+  clip-path: circle(30% at 50% 25%);
+}
+
+.clipper.bottom {
+  clip-path: circle(30% at 50% 75%);
+  margin-top: -200px;
+}
+
+.clipper img {
+  position: sticky;
+  width: 100%;
+  height: auto;
+}
+
+.clipper.top img {
+  top: 40px;
+}
+
+.clipper.bottom img {
+  top: 400px;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Center clipper on smaller devices */
+  .clipper {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clipper.top {
+    margin-top: -200px;
+  }
+
+  .clipper.bottom {
+    margin-top: -400px;
+  }
+
+}

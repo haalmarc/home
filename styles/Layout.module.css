@@ -19,6 +19,7 @@
 .container footer {
   margin-top: 160px;
   padding-bottom: 160px;
+  position: relative;
 }
 
 .container footer h1 {
@@ -54,5 +55,10 @@ nav .btnSecondary {
 @media only screen and (max-width: 1024px) {
   .container {
     padding: 8px 16px;
+  }
+
+  /* To give space for clipper on small devices */
+  .container footer {
+    margin-top: 200px;
   }
 }
